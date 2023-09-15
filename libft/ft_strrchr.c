@@ -13,3 +13,9 @@ char    *ft_strrchr(const char *s, int c)
     }
     return (last);
 }
+/*
+La función strrchr en el lenguaje de programación C se utiliza para buscar
+la ultima aparición de un carácter específico en una cadena (string) y 
+devolver un puntero al ultimo carácter encontrado. Si el carácter no se 
+encuentra en la cadena, la función devuelve un puntero nulo (NULL). 
+*/

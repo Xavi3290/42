@@ -13,3 +13,9 @@ char    *ft_strchr(const char *s, int c)
         return ((char *) &s[i]);
     return (0);
 }
+/*
+La función strchr en el lenguaje de programación C se utiliza para buscar
+la primera aparición de un carácter específico en una cadena (string) y 
+devolver un puntero al primer carácter encontrado. Si el carácter no se 
+encuentra en la cadena, la función devuelve un puntero nulo (NULL). 
+*/
