@@ -24,7 +24,9 @@ SRC =   ft_isalpha.c \
 		ft_memcmp.c \
 		ft_strlcpy.c \
 		ft_strnstr.c \
-		ft_strlcat.c 
+		ft_strlcat.c \
+		ft_atoi.c \
+		ft_calloc.c
 
 
 OBJ := $(SRC:.c=.o)
