@@ -46,19 +46,16 @@ int	main(void)
 
 	origen = "hola mundo";
 	char *destino = (char *)malloc(strlen(origen) + 1);
-		// Asigna memoria para destino
 	origen2 = "hola mundo";
 	char *destino2 = (char *)malloc(strlen(origen2) + 1);
-		// Asigna memoria para destino2
 	longitud = 11;
 	if (destino && destino2) {
-		// Utiliza memmove y ft_memmove para copiar los datos
 		memmove(destino, origen, longitud);
 		ft_memmove(destino2, origen2, longitud);
-		// Imprime las cadenas de destino para verificar las copias
+		
 		printf("Cadena de destino 1: %s\n", destino);
 		printf("Cadena de destino 2: %s\n", destino2);
-		// Libera la memoria asignada para destino y destino2
+
 		free(destino);
 		free(destino2);
 	} else {

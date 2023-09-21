@@ -26,24 +26,18 @@ una ubicación de origen a una ubicación de destino.
 int	main(void) {
 	char *origen = "hola mundo";
 	char *destino = (char *)malloc(strlen(origen) + 1);
-		// Asigna memoria para destino
 	char *origen2 = "hola mundo";
 	char *destino2 = (char *)malloc(strlen(origen2) + 1);
-		// Asigna memoria para destino2
 
 	size_t longitud = 11;
-		// Ajusta la longitud a 11 para incluir el carácter nulo
 
 	if (destino && destino2) {
-		// Utiliza memcpy para copiar los datos
 		memcpy(destino, origen, longitud);
 		ft_memcpy(destino2, origen2, longitud);
 
-		// Imprime las cadenas de destino para verificar las copias
 		printf("Cadena de destino 1: %s\n", destino);
 		printf("Cadena de destino 2: %s\n", destino2);
 
-		// Libera la memoria asignada para destino y destino2
 		free(destino);
 		free(destino2);
 	} else {

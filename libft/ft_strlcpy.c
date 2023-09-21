@@ -32,16 +32,16 @@ de búfer, strlcpy garantiza que el búfer de destino no se desborde.
 /*
 int	main(void) {
 	char *origen = "hola mundo";
-	char *destino; // Asigna memoria para destino
+	char *destino; 
 	char *origen2 = "hola mundo";
-	char *destino2; // Asigna memoria para destino2
+	char *destino2; /
 
 	size_t longitud = 7;
-		// Ajusta la longitud a 11 para incluir el carácter nulo
+	
 
 	printf("%d", strlcpy(destino, origen, longitud));
 	printf("%d", ft_strlcpy(destino2, origen2, longitud));
-	// Imprime las cadenas de destino para verificar las copias
+
 	printf("Cadena de destino 1: %s\n", destino);
 	printf("Cadena de destino 2: %s\n", destino2);
 

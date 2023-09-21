@@ -21,5 +21,30 @@ de ejecución y deseas asegurarte de que todos los elementos estén
 inicializados en cero.
 */
 /*
+int main() {
+    size_t nmemb = 5;
+    size_t size = sizeof(int);
+    size_t nmemb2 = 5;
+    size_t size2 = sizeof(int);
 
+    int *array = (int *)calloc(nmemb, size);
+    int *array2 = (int *)ft_calloc(nmemb2, size2);
+
+    if (array == NULL || array2 == NULL) {
+        printf("La asignación de memoria falló.\n");
+        return 1;
+    }
+
+    for (size_t i = 0; i < nmemb; i++) {
+        printf("array[%zu] = %d\n", i, array[i]);
+    }
+    for (size_t i = 0; i < nmemb2; i++) {
+        printf("array2[%zu] = %d\n", i, array2[i]);
+    }
+
+    free(array); // No olvides liberar la memoria al final
+    free(array2);
+
+    return 0;
+}
 */
