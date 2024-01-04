@@ -9,3 +9,12 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+/*
+int main(void)
+{
+	printf("%d\n",ft_strlen("a"));
+	printf("%d\n",ft_strlen("abc"));
+	printf("%d\n",ft_strlen("   hola"));
+	printf("%d\n",ft_strlen("$-*"));
+}
+*/
